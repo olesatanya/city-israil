@@ -1,0 +1,862 @@
+
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <meta name="keywords" content="">
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+        <meta name="author" content="tanya">
+        <title>ISA </title>
+        <link rel="shortcut icon" href="./assets/img/logo.png" type="image/png">
+        <link rel="stylesheet" href="./assets/css/index.css">
+        <link rel="stylesheet" href="./assets/css/app.css">
+
+    </head>
+    <body>
+        <header>
+            <div class="container">
+                <div class="header-bar">
+                    <a class="logo" href="#">
+                        <img src="assets/img/logo.png">
+                    </a>
+                    <button class="button-primary" onclick="javascript:alert('hello')">חיפוש</button>
+                    <div style="min-width: 180px;">
+                        <label for="checkbox_1" style="cursor: pointer; font-size: 1.2em;">הצג רק דירות פנויות</label>
+                        <input type="checkbox" id="checkbox_1">
+                    </div>
+                    <div class="dropdown">
+                        <div class="dropdown-value">עד מחיר</div>
+                        <div class="drop-pan">
+                            <a class="dropmenu" href="#">עד מחיר</a>
+                            <a class="dropmenu" href="#">עד מחיר</a>
+                            <a class="dropmenu" href="#">עד מחיר</a>
+                            <a class="dropmenu" href="#">עד מחיר</a>
+                            <a class="dropmenu" href="#">עד מחיר</a>
+                        </div>
+                    </div>
+                    
+                    <div class="dropdown">
+                        <div class="dropdown-value">ממחיר</div>
+                        <div class="drop-pan">
+                            <a class="dropmenu" href="#">ממחיר</a>
+                            <a class="dropmenu" href="#">ממחיר</a>
+                            <a class="dropmenu" href="#">ממחיר</a>
+                            <a class="dropmenu" href="#">ממחיר</a>
+                            <a class="dropmenu" href="#">ממחיר</a>
+                        </div>
+                    </div>
+                    
+                    <div class="dropdown">
+                        <div class="dropdown-value">מס’ חדרים</div>
+                        <div class="drop-pan">
+                            <a class="dropmenu" href="#">מס’ חדרים</a>
+                            <a class="dropmenu" href="#">מס’ חדרים</a>
+                            <a class="dropmenu" href="#">מס’ חדרים</a>
+                            <a class="dropmenu" href="#">מס’ חדרים</a>
+                            <a class="dropmenu" href="#">מס’ חדרים</a>
+                        </div>
+                    </div>
+                    <a href="#" style="font-size: 1.2em;">אני מחפש</a>
+                    <img src="./assets/img/primarytree.png" style="width: 200px;">
+                </div>
+                
+                <div class="header-dropdown-bar">
+                    <div class="hdrop-link">
+                        צור קשר
+                    </div>
+                    <div class="hdrop-link">
+                        מסמכים וקישורים
+                    </div>
+                    <div class="hdrop-link">
+                        תכניות
+                    </div>
+                    <div class="hdrop-link">
+                        מחירון
+                    </div>
+                    <div class="hdrop-link">
+                        פריסת התשלומים
+                    </div>
+                    <div class="hdrop-link">
+                        משכנתא
+                    </div>
+                    <div class="hdrop-link">
+                        תהליך הרכישה
+                    </div>
+                    <div class="hdrop-link active" style="width: 150px;">
+                        מפות ותרשימים
+                        <div class="hdrop-panel">
+                            <a class="hdrop-menu" href="#">מפת סביבה - השכונה</a>
+                            <a class="hdrop-menu" href="#">תרשים העמדת בניינים</a>
+                        </div>
+                    </div>
+                    <div class="hdrop-link">
+                        היזם
+                    </div>
+                    <div class="hdrop-link">
+                        העיר והשכונה
+                    </div>
+                    <div class="hdrop-link">
+                        הפרויקט
+                    </div>
+                </div>
+            </div>
+        </header>
+        <div class="landing-screen">
+            <img src="assets/img/landing.png" class="landing-image"/>
+            <!-- <div id="wowslider-container1">
+                <div class="ws_images" style="width: 100vw; height: 80vh;"><ul>
+                    <li><img src="assets/slide/1.png" alt="1" title="title 1" id="wows1_0" style="width: 100%; height: 100%;"/></li>
+                    <li><img src="assets/slide/2.png" alt="2" title="title 2" id="wows1_1" style="width: 100%; height: 100%;"/></li>
+                    <li><img src="assets/slide/3.png" alt="3" title="title 3" id="wows1_2" style="width: 100%; height: 100%;"/></li>
+                    <li><img src="assets/slide/4.png" alt="4" title="title 4" id="wows1_3" style="width: 100%; height: 100%;"/></a></li>
+                    <li><img src="assets/slide/5.png" alt="5" title="title 5" id="wows1_4" style="width: 100%; height: 100%;"   /></li>
+                </ul></div>
+            </div> -->
+        </div>
+        <div class="body-container">
+            <div id="mevaseret-panel" class="mt5">
+                <div class="row">
+                    <div class="col-lg-7 col-md-12 p0 m0" style="align-self: center;">
+                        <div > 
+                            <div class="slide-back">
+                            </div>
+                            <div class="row m3 p3 " style="padding-bottom: 0;">
+                                <div class="slideshow-container" scrolls scrolls-anim="fade-left" scrolls-duration="1000">
+                                    <div class="slides fade">
+                                        <img src="assets/img/3.png"/>
+                                        <div class="text" dir="rtl">תמונות והדמיות להמחשה בלבד.</div>
+                                    </div>
+                                    <div class="slides fade">
+                                        <img src="assets/img/1.png"/>
+                                        <div class="text" dir="rtl">תמונות והדמיות להמחשה בלבד.</div>
+                                    </div>
+                                    <div class="slides fade">
+                                         <img src="assets/img/6.png"/>
+                                         <div class="text" dir="rtl">.תמונות והדמיות להמחשה בלבד</div>
+                                    </div>
+                                    <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+                                    <a class="next" onclick="plusSlides(1)">&#10095;</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-5 col-md-12 row center" style="align-items: center;">
+                        <div scrolls scrolls-anim="fade-right" scrolls-duration="1000"> 
+                            <div class="mevaseret-desc">
+                                <h2 class="text-center">מצפה מבשרת</h2>
+                                <p dir="rtl">
+                                    <b> "מצפה מבשרת"</b>  הינו פרויקט משולב לקהל הלקוחות שזכו בהגרלה 506 במסגרת תכנית "מחיר למשתכן", ולקהל הלקוחות אשר ירכשו דירה בשוק החופשי.
+                                </p>
+                                <p dir="rtl">
+                                    במסגרת הפרויקט יוקמו 9 בניינים (מהם 2 בבניה מדורגת) בהם סה"כ 173 יחידות דיור, מתוכן 117 יחידות דיור שנבחרו בקפידה עבורכם הזוכים.
+                                </p>
+                                <p dir="rtl">
+                                    לבחירתכם דירות 3, 4, 5 חדרים ודירות גן מרהיבות בגדלים שונים שתוכננו על ידי משרד אדריכלים איצקין האמון על תכנונן של אלפי יחידות דיור ברחבי הארץ. 
+                                </p>
+                                <p dir="rtl">
+                                    כלל הדיירים בפרויקט ייהנו ממפרט עשיר ומגוון בהתאם לדרישות תכנית "מחיר למשתכן" של משרד הבינוי והשיכון ויכללו וחניה אחת לפחות לכל דירה.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div> 
+            </div>
+            <div id="zion-panel" class="mt5" >
+                    <div class="row" >
+                        <div class="col-lg-7 col-md-12 p0 m0">
+                                <div class="zion-image" scrolls scrolls-anim="fade-right" scrolls-duration="1000">
+                                    <img src="assets/img/639.png" style="height: 100%;">
+                                </div>
+                        </div>
+                        <div class="col-lg-5 col-md-12 ml0 pl0">
+                            <div class="zion-desc" scrolls scrolls-anim="fade-right" scrolls-duration="1000">
+                               <div>
+                                    <h1  class="text-center" dir="rtl">מבשרת ציון</h1>
+                                    <h3  class="text-center" dir="rtl">שכונת "המגרסה"</h2>
+                                    <p dir="rtl">
+                                        בחלקה הדרום מערבי של מבשרת ציון, קורמת בימים אלה עור וגידים שכונת "המגרסה" החדשה והמסקרנת. בשכונה זו יוקמו כ-1,270 יחידות דיור .
+                                    </p>
+                                    <p dir="rtl">
+                                        תכנונה המוקפד של השכונה משלב את הטבע הקיים עם מוסדות חינוך, מרכזים מסחריים ומוסדות תרבות פנאי, ביניהם פארק ציבורי שיוקם על פסגת גבעה ובו מתקני משחקים מרובים, שבילי אופניים ושבילי גישה בטוחים להולכי רגל אשר יוצרים סביבה אורבנית צעירה ואטרקטיבית. דרכי גישה יתאפשרו דרך שדרות החוצבים.
+                                    </p>
+                                    <p dir="rtl">
+                                        מיקומה הייחודי של השכונה, על גבעה עטופה בנוף קסום ופסטורלי של הרי ירושלים, מבטיחים לתושביה איכות חיים בסביבת מגורים נעימה, בטוחה ושלווה.
+                                    </p>
+                                    <div class="row center">
+                                        <img src="./assets/img/greentree.png" style="width: 80%;">
+                                    </div>
+                               </div>
+                            </div>
+                        </div>
+                    </div> 
+                
+            </div>
+            <div id="group-desc" class="mt5" >
+                    <div class="row center " style="align-items: flex-end;" >
+                            <div >
+                                <img src="assets/img/greentree.png" style="width:350px;" />
+                            </div>
+                            <div class="ml3" scrolls scrolls-anim="fade-down" scrolls-duration="1000">
+                                <h1 style="font-size:4em; line-height: 0;">היזם</h1>
+                                <h2 style=" color:#cfbc80; line-height: 0;">ISA GROUP</h2>
+                            </div>
+                    </div>
+                <div class="row center p3 pl5 pr5 mr5 ml5" >
+                    <h2 dir="rtl" class="text-center" style="font-size: 1.6em;" scrolls scrolls-anim="fade-down" scrolls-duration="1000">
+                        ISA GROUP הינה חברה המתמחה בייזום, בנייה ופיתוח נדל"ן ברחבי הארץ. החברה החלה את דרכה כחברת ביצוע בשוק הנדל"ן הפרטי והציבורי בישראל, ובמהלך השנים רכשה שם ומוניטין של חברה מקצועית, מוקפדת ויצירתית, אשר שמה דגש ייחודי על השירות ללקוח. החברה חרטה על דגלה ערכים של מקצועיות אמיתית, לצד הוגנות ושיח בגובה העיניים מתוך רצון להעניק ללקוחותיה חווית רכישה איכותית, בטוחה ושקטה עם ליווי אישי וקשוב עד לקבלת המפתח לבית החדש ואף מעבר. ISA GROUPמאמינה כי עליה להעניק לכם שירות מקצועי, קשוב ואישי, ומתחייבת להעסיק את בעלי המקצוע הטובים ביותר, לפעול בהתאם לתקני הבטיחות המחמירים ביותר כדי להעניק לכם איכות חיים בכל מקום בו תבחרו להיות. אנו מבטיחים כי בכל שלב תמצאו אוזן קשבת ונכונות לסיוע מכל העובדים בקבוצה עד לשביעות רצונכם ואף יותר.
+                    </h2>
+                </div>
+            </div>
+            <div id="tower-panel " class="pt3 pl5 pr5 mr5 ml5">
+                <div class="row">
+                    <div class="col-lg-9 col-md-12">
+                        <div class="row">
+                            <div class="col-lg-4 col-md-12 m0 p1">
+                                <div class="tower-img-panel" scrolls scrolls-anim="fade-left" scrolls-duration="1000">
+                                    <img src="assets/img/34.png">
+                                    <div class="tower-img-desc" scrolls scrolls-anim="fade-right" scrolls-duration="1000">
+                                        <h1>Jerusalem Es tates</h1>
+                                        <h2>מתחם שנלר - ירושלים</h2>
+                                        
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-8 col-md-12 m0 p1">
+                                <div class="tower-img-panel" scrolls scrolls-anim="fade-left" scrolls-duration="1000">
+                                    <img src="assets/img/760.png" >
+                                    <div class="tower-img-desc" scrolls scrolls-anim="fade-down" scrolls-duration="1000">
+                                        <h1>טחנת קמח גבעת שאול</h1>
+                                        <h2>ירושלים</h2>
+                                        
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-lg-8 col-md-12 m0 p1">
+                                <div class="tower-img-panel" scrolls scrolls-anim="fade-left" scrolls-duration="1000">
+                                    <img src="assets/img/3.png" >
+                                    <div class="tower-img-desc" scrolls scrolls-anim="fade-down" scrolls-duration="1000">
+                                        <h1>מצפה רמות</h1>
+                                        <h2> ירושלים</h2>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-4 col-md-12  m0 p1">
+                                <div class="tower-img-panel" scrolls scrolls-anim="fade-right" scrolls-duration="1000">
+                                    <img src="assets/img/5.png" >
+                                    <div class="tower-img-desc" scrolls scrolls-anim="fade-right" scrolls-duration="1000">
+                                        <h1>Sea Tower</h1>
+                                        <h2>טירת הכרמל</h2>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-12  m0 p1">
+                        <div class="tower-img-panel" scrolls scrolls-anim="fade-right" scrolls-duration="1000">
+                            <img src="assets/img/2.png">
+                            <div class="tower-img-desc" >
+                                <h1>מגדלי שער העיר</h1>
+                                <h2>בת ים</h2>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-lg-3 col-md-12  m0 p1">
+                        <div class="tower-img-panel" scrolls scrolls-anim="fade-down" scrolls-duration="1000">
+                            <img src="assets/img/4.png" >
+                            <div class="tower-img-desc" scrolls scrolls-anim="fade-left" scrolls-duration="1000">
+                                <h1>הבית בגן</h1>
+                                <h2>ירושלים</h2>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="col-lg-3 col-md-12  m0 p1">
+                        <div class="tower-img-panel" scrolls scrolls-anim="fade-down" scrolls-duration="1000">
+                            <img src="assets/img/5.png" >
+                            <div class="tower-img-desc" scrolls scrolls-anim="fade-down" scrolls-duration="1000">
+                                <h1>מצפה האלה</h1>
+                                <h2>בית שמש</h2>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-6 col-md-12  m0 p1">
+                        <div class="tower-img-panel" scrolls scrolls-anim="fade-down" scrolls-duration="1000">
+                            <img src="assets/img/6.png" >
+                            <div class="tower-img-desc" scrolls scrolls-anim="fade-right" scrolls-duration="1000">
+                                        <h1>מצפה החורש</h1>
+                                        <h2>בית שמש</h2>
+                                    </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div id="line-bar" class="mt5" >
+                <div class="row center" >
+                    <div style=" z-index:1; background-color: white; padding: 1em 2em;" scrolls scrolls-anim="fade-up" scrolls-duration="1000">
+                        <img src="assets/img/greentree.png" width="250px">
+                        <h1 class="text-center bold">מפות ותרשימים</h1>
+                    </div>
+                    <div style="background-color: #123225; width: 100%; height: 80px; position: relative; transform: translateY(-120px); z-index: -1; display: flex; justify-content: center;">
+                    </div>
+                </div>
+            </div>
+            <div id="chart-panel" class="mt3">
+                    <div class="row center">
+                        <div class="col-lg-2 col-sm-12"></div>
+                        <div class="col-lg-4 col-sm-12 row center">
+                            <div class="chart-card" scrolls scrolls-anim="fade-right" scrolls-duration="1000">
+                                <p style="font-size: 1.4em;" dir="rtl">
+                                    תרשים העמדת בניינים >>
+                                </p>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 col-sm-12 row center">
+                            <div class="chart-card" scrolls scrolls-anim="fade-right" scrolls-duration="1000">
+                                <p dir="rtl" style="font-size: 1.4em;">
+                                    מפת סביבה - השכונה >>
+                                </p>
+                            </div>
+                        </div>
+                        <div class="col-lg-2 col-sm-12"></div>
+                </div>
+            </div>
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-6 col-sm-12" style="">
+                        <img src="assets/img/greentree.png" style="width: 90%; z-index: 100;"  scrolls-anim="fade-up" scrolls-duration="1000">
+                    </div>
+                    <div class="col-md-6 col-sm-12">
+                        <div class="purchase-panel " style="margin-top: 100px;" scrolls scrolls-anim="fade-right" scrolls-duration="1000">
+                            <h1 dir="rtl">תהליך הרכישה</h1>
+                            <h1 dir="rtl">לזכאי “מחיר למשתכן”</h1>
+                            <div class="row" >
+                                <button class="accordion active" dir="rtl">
+                                    שלב 1: הגרלה ותוצאותיה
+                                </button>
+                                <div class="accordion-panel active">
+                                    <h3 dir="rtl" style="width: 300px; float: right;">
+                                        משרד הבינוי והשיכון ערך הגרלה בין הנרשמים לפרויקט "מצפה הרים", לקביעת מיקומם בסדר בחירת הדירות בהגרלה.   קרא עוד >>
+                                    </h3>
+                                </div>
+
+                                <button class="accordion">
+                                    שלב 2: כנסים: הצגת הפרויקט “מצפה מבשרת”
+                                </button>
+                                <div class="accordion-panel" >
+                                    <h3 dir="rtl" style="width: 400px; float: right;">
+                                        משרד הבינוי והשיכון ערך הגרלה בין הנרשמים לפרויקט "מצפה הרים", לקביעת מיקומם בסדר בחירת הדירות בהגרלה.   קרא עוד >>
+                                    </h3>
+                                </div>
+                                
+                                <button class="accordion active">
+                                    שלב 3: בחירת דירה
+                                </button>
+                                <div class="accordion-panel active">
+                                    <h3 dir="rtl" style="width: 400px; float: right;">
+                                        מועד בחירת הדירה  יתבצע מספר ימים לאחר שליחת הכנס המקוון.
+                                        <br>קרא עוד >>
+                                    </h3>
+                                </div>
+                            </div>
+                            </div>
+                            <h3 dir="rtl">
+                                *** מובהר כי חוזה המכר ונספחיו נבדקו ואושרו ע"י משרד הבינוי והשיכון, לא יתקבלו השגות או בקשות לשינוי הנוסח ולא יתנהל לגביהם משא ומתן.
+                            <h3>
+                            <h3 dir="rtl">
+                                *** יש להגיע לחתימת החוזה ע"פ הנחיות משרד הבריאות התקפות.
+                            </h3>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-3 col-sm-12"></div>
+                    <div class="col-md-9 col-sm-12">
+                        <div class="purchase-panel" scrolls scrolls-anim="fade-right" scrolls-duration="1000">
+                            <button class="accordion active" dir="rtl">שלב 4: חתימה על חוזה המכר</button>
+                            <div class="accordion-panel active">
+                                <h3 dir="rtl round"></span> חתימה על חוזה המכר תתקיים עד 30 ימים קלנדריים ממועד בחירת הדירה.</h3>
+                                <h3 dir="rtl round">
+                                    הזמנה למועד זה תימסר לכם במועד בחירת הדירה ולאחר מכן תישלח אליכם הזמנה נוספת לכתובת המייל האישית שלכם.
+                                </h3>
+                                
+                                <h3 dir="rtl round">
+                                    לחתימת החוזה יש להגיע מצוידים בתעודות זהות+ ספח ושיק עבור שכר טרחת עורך דין.
+                                </h3>
+                                
+                                <h3 dir="rtl round">
+                                    חתימת החוזה תתבצע בנוכחות שני בני הזוג.
+                                </h3>
+                                
+                                <h3 dir="rtl round">
+                                    במידה ונבצר מאחד הזוכים להגיע, יש להצטייד בייפוי כח נוטריוני ע"פ נוסח אותו יש להדפיס מהפרק מסמכים וקישורים באתר זה.       ללא ייפוי כח זה- לא תתבצע חתימה על החוזה.    <<  קרא פחות 
+                                </h3>
+                            </div>
+                            <h3 dir="rtl" style="width: 70%; float:right;">
+                                *** מובהר כי חוזה המכר ונספחיו נבדקו ואושרו ע"י משרד הבינוי והשיכון, לא יתקבלו השגות או בקשות לשינוי הנוסח ולא יתנהל לגביהם משא ומתן.
+                            </h3>
+                            <h3 dir="rtl" style="width: 70%; float:right;">
+                                *** יש להגיע לחתימת החוזה ע"פ הנחיות משרד הבריאות התקפות.
+                            </h3>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="container" id="mortgage-panel ">
+                <h1 class="text-right"  dir="rtl">משכנתא</h1>
+                <h2 class="text-right" dir="rtl">האישור העקרוני</h2>
+                <div class="row">
+                    <div class="col-lg-6 col-md-12">
+                        <div style="width: 100%; height: 100%;"  >
+                            <img src="./assets/img/key.png" style="width: 100%; height: 100%;" >
+                        </div>
+                    </div>
+                    <div class="col-lg-6 col-md-12">
+                        <div class="purchase-panel" scrolls scrolls-anim="fade-right" scrolls-duration="1000">
+                            <button class="accordion active" dir="rtl">מה הוא האישור העקרוני?</button>
+                            <div class="accordion-panel active">
+                                <h3 dir="rtl">
+                                    קבלת האישור העקרוני הכרחית עבורכם טרם בחירת הדירה בכדי שתהיו בטוחים כי הבנק יעניק לכם את המימון עבור רכישת הדירה. לרוב, הריביות שמוצגות באישור זה מותנות בלקיחת ההלוואה תוך 12-14 ימים קלנדריים ולכן אין צורך להתייחס לריביות, אלא רק לאישור העקרוני על גובה המשכנתא בלבד.
+                                </h3>
+                                <h3 dir="rtl">
+                                    האישור העקרוני הוא השלב הראשון בדרך לקבלת משכנתא והוא מהווה מסמך ראשוני באמצעותו אתם לומדים האם הבנק יאפשר לכם לקבל משכנתא ובאילו תנאים לפי מספר קריטריונים: הכנסה, ותק תעסוקתי, ערב מלווה, אחוזי מימון מהנכס הנרכש וכו').
+                                </h3>
+                                <h3 dir="rtl">
+                                    זכרו, כל עוד לא חתמתם על חוזה לרכישת הדירה, הבנק לא מאשר משכנתא ספציפית לפרויקט ולכן יונפק לכם אישור "כללי". רק לאחר שיועבד חוזה הרכישה האישי שלכם, יבדוק הבנק את הנתונים וינפיק את האישורים המתאימים.
+                                </h3>
+                            </div>
+                            <button class="accordion active" dir="rtl">מה אחוז המימון המקסימלי?</button>
+                            <div class="accordion-panel active">
+                                <h3 dir="rtl">
+                                    אחוז המימון המקסימלי אותו מאפשר בנק ישראל הינו עד 75% משווי הנכס ביחס לעלותו בשוק החופשי.
+                                </h3>
+                                <h3 dir="rtl">
+                                    במסגרת "מחיר למשתכן" מתאפשר מצב בו אחוז המימון עולה על 75% ממחיר הדירה
+                                    ובתנאי שנתקיימו שני תנאים:
+1. הרוכש העמיד 100,000 ₪ ומעלה הון עצמי.
+2. שווי הדירה הנרכשת לא יעלה על 1,800,000 ₪.
+                                </h3>
+                                <h3 dir="rtl">
+                                    על מנת שהבנק יאשר את אחוז המימון על פי שווי השוק של הדירה, הוא ידרוש טרם ביצוע המשכנתא ביצוע שמאות ע"י שמאי חיצוני שיאשר את שווי השוק. לדוגמה: עבור דירה שמחירה 1,000,000 ₪ אשר שוויה המשוער הוא 1,200,000 ₪ ניתן לקבל משכנתא של  75% מ-1,200,000 ₪ = 900,000 ₪ המהווים 90% ממחיר הדירה החוזי.
+                                </h3>
+                                <h3 dir="rtl">
+                                    
+זכרו הבנק רשאי לסרב לתת משכנתא ללקוח או לסרב לתת 75% מימון, הענקת משכנתא מתבצעת בהתאם לשיקול דעתו של הבנק ובהתאם לנתוניו האישיים של הרוכש. אנו ממליצים לבצע את בדיקותיכם במספר בנקים שונים על מנת שתקבלו את התנאים הטובים ביותר עבורכם.
+                                </h3>
+                            </div>
+                            <p dir="rtl">*** אין לראות במידע זה כייעוץ משפטי ו/או ייעוץ כלכלי ו/או חוות דעת ו/או המלצה מקצועית כלשהיא.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div id="buyer-panel" class="mt5">
+                <div class="row">
+                    <div class="col-lg-6 col-sm-12 row center">
+                        <div class="buyer-panel" scrolls scrolls-anim="fade-left"  scrolls-duration="1000">
+                            <h2 dir="rtl">בנוסף למחיר הדירה, התשלומים</h2>
+                            <h2 dir="rtl">הבאים יחולו על הרוכש</h2>
+                            <h2 dir="rtl">וישולמו על ידו:</h2>
+                            <br>
+                            <h3>מובהר כי בהתאם לתנאי המכרז</h3>
+                            <h3>מחיר הדירה יהיה צמוד למדד </h3>
+                            <h3>תשומות הבנייה למועד הזכייה.</h3>
+                            <br>
+                            <h3 dir="rtl"> 0.5% ממחיר הידרה עד לסך </h3>
+                            <h3>של 4,999 ₪ בתוספת מע”מ</h3>
+                            <h3>ישולמו ישירות לעו”S הפרויקט,</h3>
+                            <h3>בגין השתתפות בהצואות משפטיות </h3>
+                            <h3>של החברה, בעת חתימת החוזה</h3>
+                            <br>
+                            <h3>תשלום בגין התקנת מונה מים.</h3>
+                            <Br>
+                            <h3>תשלום בגין התקנת מונה גז</h3>
+                            <h3>ו/או פיקדון לחברת הגז.</h3>
+                            <br>
+                            <h3>תשלום בגין התקנת מונה חשמל.</h3>
+                        </div>
+                    </div>
+                    <div class="col-lg-6 col-sm-12 row center">
+                        <div class="buyer-panel" scrolls scrolls-anim="fade-right"  scrolls-duration="1000">
+                            <h1>פריסת תשלומים</h1>
+                            <h2 style="color:#013736!important">והוצאות נלוות</h2>
+                            <img src="./assets/img/smart3.png" style="width:150px">
+                            <br><br>
+                            <h2>פריסת שלומים:</h2>
+                            <p> - במעמד חתימת ההסכם. - 7%</p>
+                            <p>13% - 45 ימים לאחר חתימת ההסכם. </p>
+                            <p>14% - תוך 5 חודשים ממועד התשלום השני.</p>
+                            <p>14% -  תוך 10 חודשים ממועד התשלום השני.</p>
+                            <p>14% - תוך 5 חודשים ממועד התשלום השני.</p>
+                            <p>14% -  תוך 10 חודשים ממועד התשלום השני.</p>
+                            <br>
+                            <h2>מועד המסירה: 24/06/2024</h2>
+                            <br>
+                            <h2>פרויקט “מצפה הרים” מלווה ע”י בנק הפועלים</h2>
+                            <h2>ועל כן, כלל התשלומים יתבצעו באמצעות פנקס</h2>
+                            <h2>שוברים בלבד.</h2>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="price-panel" style="position: relative;" >
+                    <h1 class="text-center" style="color:#013736; font-size: 4em;" >Price table</h1>
+                    <div style="z-index: -1; position: absolute; width: 100%;">
+                        <div style="background-color: #013736; height: 200px; align-items: center; z-index: -1;">
+                        </div>
+                        <div  style="z-index: -1; ">
+                            <img src="./assets/img/back.png" style="width: 100%;">
+                        </div>
+                    </div>
+                    <div class="row center " style="align-items: center; padding-top: 3em; z-index: 10;">
+                        <button class="button-primary">Button</button>
+                        <div style="margin: 10px;">
+                            <label style="color: white;">label for checkbox</label>
+                            <input type="checkbox">
+                        </div>
+                        <div class="dropdown">
+                            <div class="dropdown-value">value</div>
+                            <div class="drop-pan">
+                                <a class="dropmenu" href="#">menu234</a>
+                                <a class="dropmenu" href="#">menu234</a>
+                                <a class="dropmenu" href="#">menu234</a>
+                                <a class="dropmenu" href="#">menu234</a>
+                                <a class="dropmenu" href="#">menu234</a>
+                            </div>
+                        </div>
+                        
+                        <div class="dropdown">
+                            <div class="dropdown-value">value</div>
+                            <div class="drop-pan">
+                                <a class="dropmenu" href="#">menu234</a>
+                                <a class="dropmenu" href="#">menu234</a>
+                                <a class="dropmenu" href="#">menu234</a>
+                                <a class="dropmenu" href="#">menu234</a>
+                                <a class="dropmenu" href="#">menu234</a>
+                            </div>
+                        </div>
+                        
+                        <div class="dropdown">
+                            <div class="dropdown-value">value</div>
+                            <div class="drop-pan">
+                                <a class="dropmenu" href="#">menu234</a>
+                                <a class="dropmenu" href="#">menu234</a>
+                                <a class="dropmenu" href="#">menu234</a>
+                                <a class="dropmenu" href="#">menu234</a>
+                                <a class="dropmenu" href="#">menu234</a>
+                            </div>
+                        </div>
+                        <a href="#">אני מחפש</a>
+                    </div>
+                    <div class="price-panel ">
+                        <div class="price-tab-bar row center">
+                            <div class="tab-menu">9</div>
+                            <div class="tab-menu">8</div>
+                            <div class="tab-menu">7</div>
+                            <div class="tab-menu">6</div>
+                            <div class="tab-menu active">5</div>   
+                            <div class="tab-menu">4</div>   
+                            <div class="tab-menu">3</div>   
+                            <div class="tab-menu">2</div>   
+                            <div class="tab-menu">1</div>   
+                        </div>
+                        <div class="price-table">
+                            <div class="thead">
+                                <div class="tr">
+                                    <div class="th">999</div>
+                                    <div class="th">888</div>
+                                    <div class="th">777</div>
+                                    <div class="th">666</div>
+                                    <div class="th">555</div>
+                                    <div class="th">444</div>
+                                    <div class="th">333</div>
+                                    <div class="th">222</div>
+                                    <div class="th">111</div>
+                                </div>
+                            </div>
+                            <div class="tbody">
+                                <div class="tr">
+                                    <div class="td"><img src="assets/img/down.svg"></div>
+                                    <div class="td">342</div>
+                                    <div class="td">352</div>
+                                    <div class="td">362</div>
+                                    <div class="td">372</div>
+                                    <div class="td">232</div>
+                                    <div class="td">132</div>
+                                    <div class="td">392</div>
+                                    <div class="td">3</div>
+                                </div>
+                                <div class="tr">
+                                    <div class="td"><img src="assets/img/down.svg"></div>
+                                    <div class="td">342</div>
+                                    <div class="td">352</div>
+                                    <div class="td">362</div>
+                                    <div class="td">372</div>
+                                    <div class="td">232</div>
+                                    <div class="td">132</div>
+                                    <div class="td">392</div>
+                                    <div class="td">3</div>
+                                </div>
+                                <div class="tr">
+                                    <div class="td"><img src="assets/img/down.svg"></div>
+                                    <div class="td">342</div>
+                                    <div class="td">352</div>
+                                    <div class="td">362</div>
+                                    <div class="td">372</div>
+                                    <div class="td">232</div>
+                                    <div class="td">132</div>
+                                    <div class="td">392</div>
+                                    <div class="td">3</div>
+                                </div>
+                                <div class="tr balance-row">
+                                    balance : 32423434
+                                </div>
+                                <div class="tr">
+                                    <div class="td"><img src="assets/img/down.svg"></div>
+                                    <div class="td">342</div>
+                                    <div class="td">352</div>
+                                    <div class="td">362</div>
+                                    <div class="td">372</div>
+                                    <div class="td">232</div>
+                                    <div class="td">132</div>
+                                    <div class="td">392</div>
+                                    <div class="td">3</div>
+                                </div>
+                                <div class="tr">
+                                    <div class="td"><img src="assets/img/down.svg"></div>
+                                    <div class="td">342</div>
+                                    <div class="td">352</div>
+                                    <div class="td">362</div>
+                                    <div class="td">372</div>
+                                    <div class="td">232</div>
+                                    <div class="td">132</div>
+                                    <div class="td">392</div>
+                                    <div class="td">3</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row center">
+                        <h1>Title</h1>
+                    </div>
+                    
+                    <div class="price-panel ">
+                        <div class="price-tab-bar row center" style="background-color: white;">
+                            <div class="tab-menu black">9</div>
+                            <div class="tab-menu black">8</div>
+                            <div class="tab-menu black">7</div>
+                            <div class="tab-menu black">6</div>
+                            <div class="tab-menu black active">5</div>   
+                            <div class="tab-menu black">4</div>   
+                            <div class="tab-menu black">3</div>   
+                            <div class="tab-menu black">2</div>   
+                            <div class="tab-menu black">1</div>   
+                        </div>
+                        <div class="price-table">
+                            <div class="thead">
+                                <div class="tr">
+                                    <div class="th  border-left">Header 1</div>
+                                    <div class="th  border-left">Header 2</div>
+                                </div>
+                            </div>
+                            <div class="tbody">
+                                <div class="tr">
+                                    <div class="td border-left">
+                                        <div>
+                                            <img src="assets/img/pdf.png">
+                                            <p>PDF1</p>
+                                        </div>
+                                        <!-- <div>
+                                            <img src="assets/img/pdf.png">
+                                            PDF2
+                                        </div> -->
+                                    </div>
+                                    <div class="td border-left"><label>PDF</label><img src="assets/img/pdf.png"></div>
+                                </div>
+                                <div class="tr">
+                                    <div class="td border-left">
+                                        <div>
+                                            <img src="assets/img/pdf.png">
+                                            <p>PDF1</p>
+                                        </div>
+                                        <!-- <div>
+                                            <img src="assets/img/pdf.png">
+                                            PDF2
+                                        </div> -->
+                                    </div>
+                                    <div class="td border-left"><label>PDF</label><img src="assets/img/pdf.png"></div>
+                                </div>
+                                <div class="tr">
+                                    <div class="td border-left">
+                                        <div>
+                                            <img src="assets/img/pdf.png">
+                                            <p>PDF1</p>
+                                        </div>
+                                        <!-- <div>
+                                            <img src="assets/img/pdf.png">
+                                            PDF2
+                                        </div> -->
+                                    </div>
+                                    <div class="td border-left"><label>PDF</label><img src="assets/img/pdf.png"></div>
+                                </div>
+                                <div class="tr">
+                                    <div class="td border-left">
+                                        <div>
+                                            <img src="assets/img/pdf.png">
+                                            <p>PDF1</p>
+                                        </div>
+                                        <!-- <div>
+                                            <img src="assets/img/pdf.png">
+                                            PDF2
+                                        </div> -->
+                                    </div>
+                                    <div class="td border-left"><label>PDF</label><img src="assets/img/pdf.png"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+            </div>
+            <div id="link-panel" style="border-top:15px solid #013736; background-color: white; padding-top: 3em; margin-top:3em">
+                <div class="row">
+                    <div class="col-md-9 col-sm-12">
+                        <div class="link-panel" scrolls scrolls-anim="fade-up"  scrolls-duration="1000">
+                            <div class="pdf-link">
+                                <img  src='./assets/img/pdf.png' >
+                                <p>ג’4</p>
+                            </div>
+                            <div class="pdf-link">
+                                <img  src='./assets/img/pdf.png' >
+                                <p>ייפוי כח נוטריוני 
+                                    לחתימת חוזה 
+                                </p>
+                            </div>
+                            <div class="pdf-link">
+                                <img  src='./assets/img/pdf.png' >
+                                <p>ייפוי כח נוטריוני 
+                                    לבחירת דירה
+                                    ע"י צד ג' </p>
+                            </div>
+                            <div class="pdf-link">
+                                <img  src='./assets/img/pdf.png' >
+                                <p>ייפוי כח נוטריוני 
+                                    לבחירת דירה
+                                    ע”י בן הזוג </p>
+                            </div>
+                            <div class="pdf-link">
+                                <img  src='./assets/img/pdf.png' >
+                                <p>ייפוי כח 
+                                    לבחירת דירה </p>
+                            </div>
+                            <div class="pdf-link">
+                                <img  src='./assets/img/pdf.png' >
+                                <p>טופס בחירת דירה </p>
+                            </div>
+                            <div class="pdf-link">
+                                <img  src='./assets/img/pdf.png' >
+                                <p>חוזה </p>
+                            </div>
+                            <div class="pdf-link">
+                                <img  src='./assets/img/pdf.png' >
+                                <p>מפרט מכר
+                                </p>
+                            </div>
+                        </div>   
+                        <div class="link-panel" scrolls scrolls-anim="fade-down"  scrolls-duration="1000">
+                            <div class="pdf-link">
+                                <img  src='./assets/img/link.png' >
+                                <p>קישור לאתר
+                                    ההגרלות</p>
+                            </div>
+                            <div class="pdf-link">
+                                <img  src='./assets/img/link.png' >
+                                <p>תכנית חניה 9
+                                </p>
+                            </div>
+                            <div class="pdf-link">
+                                <img  src='./assets/img/link.png' >
+                                <p>תכנית חניה 8
+                                </p>
+                            </div>
+                            <div class="pdf-link">
+                                <img  src='./assets/img/link.png' >
+                                <p>תכנית חניה 7
+                                </p>
+                            </div>
+                            <div class="pdf-link">
+                                <img  src='./assets/img/link.png' >
+                                <p>תכנית חניה 6
+                                </p>
+                            </div>
+                            <div class="pdf-link">
+                                <img  src='./assets/img/link.png' >
+                                <p>תכנית חניה 5
+                                </p>
+                            </div>
+                            <div class="pdf-link">
+                                <img  src='./assets/img/link.png' >
+                                <p>תכנית חניה 4
+                                </p>
+                            </div>
+                            <div class="pdf-link">
+                                <img  src='./assets/img/link.png' >
+                                <p>תכנית חניה 3
+                                </p>
+                            </div>
+                            <div class="pdf-link">
+                                <img  src='./assets/img/link.png' >
+                                <p>תכנית חניה 3
+                                </p>
+                            </div>
+                            <div class="pdf-link">
+                                <img  src='./assets/img/link.png' >
+                                <p>תכנית חניה 2
+                                </p>
+                            </div>
+                        </div>   
+                    </div>
+                    <div class="col-md-3 col-sm-12 row center ">
+                    <div style="align-self: center;" scrolls scrolls-anim="fade-right"  scrolls-duration="1000"> 
+                            <img  src='./assets/img/greentree.png' style="width: 90%;">
+                            <h1 class="text-center" style="font-size: 2.4em;">תכנית חניה 1
+                            </h1>
+                    </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <footer scrolls >
+            <div class="p5 m5" style="margin-bottom: 7em;">
+                <div class="row">
+                    <div class="col-lg-4 col-md-12 row center" style="align-items: center;">
+                        <div class="contact-panel" scrolls scrolls-anim="fade-left"  scrolls-duration="1000">
+                            <h2 > : צור קשר</h2>
+                            <a href="#" class="footer-contact-link">טלפון ליצירת קשר 052-7538877<img src="assets/img/telephone-svgrepo-com.svg" style="margin-left: 10px;" width="24"/></a>
+                            <a href="#"  class="footer-contact-link">מייל הפרויקט Isagroup506@gmail.com <img src="assets/img/mail-svgrepo-com.svg" style="margin-left: 10px;" width="24"/></a>
+                            <a href="#"  class="footer-contact-link">אתר החברה isa-grp.com<img src="assets/img/world-grid-svgrepo-com.svg" style="margin-left: 10px;" width="24"/></a>
+                            <img class="footer-logo" src='./assets/img/logo.png' >
+                        </div>
+                    </div>
+                    <div class="col-lg-8 col-md-12 row center" style="align-items: center;">
+                        <div class="footer-map">
+                            <img  src='./assets/img/map.png' scrolls scrolls-anim="fade-down"  scrolls-duration="1000">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+        <div class="footer-bar">
+            © כל הזכויות שמורות לארבל ניהול ושיווק נדל"ן בע”מ.
+        </div>
+        
+
+        <script src="./assets/js/app.js"></script>
+        <script src="./assets/js/scrolls.min.js"></script>
+        
+    </body>
+</html>
